@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Amy Nyaga | Software Engineer Portfolio</title>
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<style>
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(-45deg, #000000, #1a1a1a, #000000, #1a1a1a);
+  background-size: 400% 400%;
+  animation: gradientBG 20s ease infinite;
+  color: #f0f0f0;
+}
+nav {
+  position: sticky;
+  top: 0;
+  background: rgba(0,0,0,0.8);
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  z-index: 999;
+}
+nav a {
+  color: #00ffff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  text-shadow: 0 0 5px #00ffff;
+}
+nav a:hover { text-decoration: underline; }
+
+header {
+  text-align: center;
+  padding: 40px 20px;
+}
+header img {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #00ffff;
+  box-shadow: 0 0 20px #00ffff;
+  animation: floatIcon 4s ease-in-out infinite;
+}
+header h1 {
+  font-size: 2em;
+  margin-top: 15px;
+  color: #00ffff;
+  text-shadow: 0 0 10px #00ffff;
+}
+header p {
+  font-size: 1.1em;
+  color: #ccc;
+  margin-top: 8px;
+}
+
+.about, .skills, .projects {
+  max-width: 1000px;
+  margin: auto;
+  padding: 30px 20px;
+}
+h2 {
+  color: #00ffff;
+  text-shadow: 0 0 5px #00ffff;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #00ffff;
+  padding-bottom: 5px;
+}
+
+.skills ul {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+}
+.skills li {
+  background: rgba(0,0,0,0.5);
+  padding: 10px;
+  border-radius: 5px;
+  text-align: left;
+  box-shadow: 0 0 10px rgba(0,255,255,0.2);
+}
+
+.project {
+  background: rgba(0,0,0,0.5);
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 15px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 0 10px rgba(0,255,255,0.2);
+}
+.project:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px #00ffff;
+}
+.project h3 {
+  color: #00ffff;
+  margin-top: 10px;
+  text-shadow: 0 0 5px #00ffff;
+}
+.project p {
+  margin: 8px 0;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: rgba(0,0,0,0.8);
+  margin-top: 30px;
+}
+footer a {
+  color: #00ffff;
+  margin: 0 5px;
+}
+footer a .bx {
+  font-size:1.8em;
+  animation: floatIcon 3s ease-in-out infinite;
+}
+
+@keyframes gradientBG {
+  0%{background-position:0%50%;}
+  50%{background-position:100%50%;}
+  100%{background-position:0%50%;}
+}
+@keyframes floatIcon {
+  0%,100%{transform:translateY(0);}
+  50%{transform:translateY(-4px);}
+}
+
+@media(min-width:600px){
+  .skills ul {
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  }
+}
+</style>
+</head>
+<body>
+<nav>
+  <a href="index.html">Home</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<header>
+  <img src="profile.jpg" alt="Amy Nyaga">
+  <h1>Amy Nyaga – Software Engineer</h1>
+  <p>Building modern apps & beautiful user interfaces</p>
+</header>
+
+<section class="about">
+  <h2>About Me</h2>
+  <p>Hi! I’m <strong>Amy Nyaga</strong> — a software engineer, curious creative, and certified late-night coder who still feels a tiny spark of joy every time a new idea comes to life on screen.</p>
+  <p>My journey began unexpectedly when I decided to redesign my personal blog. What started as innocent curiosity turned into a deep passion for building things on the web. Soon enough, HTML, CSS, and JavaScript became more than just code — they became tools to turn my sketches and ideas into living, breathing experiences people can actually use.</p>
+  <p>I love working on projects that combine design and functionality: sleek landing pages, interactive dashboards, small but mighty web apps like calculators, note-taking tools, or budget trackers that are not just useful, but also feel delightful to use. I enjoy the challenge of making complex things look simple — and making everyday tools a little more beautiful.</p>
+  <p>Technically, I’m fluent in <strong>HTML, CSS, JavaScript</strong> and comfortable crafting responsive, cross-browser designs that adapt seamlessly to different devices. I often reach for <strong>React</strong> when building interactive apps, and I keep my work version-controlled and tidy with <strong>Git</strong>. I’m also fascinated by <strong>UI/UX</strong> design — how small details like spacing, color, or animations can transform user experience.</p>
+  <p>Outside coding, I’m probably sketching new layout ideas, reorganizing my color palettes (for the hundredth time), or explaining to friends why a button’s hover effect can make or break the vibe. I believe technology should feel human, design should feel intentional, and side projects should always have a touch of fun.</p>
+  <p>So whether you want to collaborate on a project, share design inspiration, or debate the best VS Code theme, <a href="contact.html">let’s connect</a>. Because in the end, good ideas get better when shared!</p>
+</section>
+
+<section class="skills">
+  <h2>Skills & What I Can Do</h2>
+  <ul>
+    <li><strong>HTML & CSS</strong><br>Build clean, semantic pages with modern layouts, animations, and beautiful styling.</li>
+    <li><strong>JavaScript</strong><br>Add interactivity, dynamic behavior, calculators, modals, and real-time features.</li>
+    <li><strong>React</strong><br>Create component-based single-page applications and rich interfaces.</li>
+    <li><strong>Responsive Design</strong><br>Make websites look great on phones, tablets, and desktops.</li>
+    <li><strong>UI/UX</strong><br>Design intuitive layouts, craft smooth user flows, and add micro-interactions that delight.</li>
+    <li><strong>Version Control (Git)</strong><br>Keep projects organized, collaborate easily, and track changes safely.</li>
+  </ul>
+</section>
+
+<section class="projects">
+  <h2>My Projects</h2>
+  <div class="project">
+    <h3>Smart Calculator</h3>
+    <p>Clean, responsive calculator app built with HTML, CSS & JavaScript.</p>
+    <a href="https://github.com/Amynyaga/calculator" target="_blank">View on GitHub</a>
+  </div>
+  <div class="project">
+    <h3>Expense Tracker App</h3>
+    <p>Track daily expenses & visualize spending habits with vanilla JS.</p>
+    <a href="https://github.com/Amynyaga/expense-tracker" target="_blank">View on GitHub</a>
+  </div>
+  <div class="project">
+    <h3>Modern Landing Page</h3>
+    <p>Fully responsive landing page template with modern design.</p>
+    <a href="https://github.com/Amynyaga/landing-page" target="_blank">View on GitHub</a>
+  </div>
+  <div class="project">
+    <h3>Notes App</h3>
+    <p>Simple app to create, edit & delete notes; stores locally.</p>
+    <a href="https://github.com/Amynyaga/Notes-App" target="_blank">View on GitHub</a>
+  </div>
+</section>
+
+<footer>
+  &copy; 2025 Amy Nyaga | Connect:
+  <a href="#"><i class='bx bxl-linkedin'></i></a>
+  <a href="#"><i class='bx bxl-github'></i></a>
+  <a href="#"><i class='bx bxl-twitter'></i></a>
+</footer>
+</body>
+</html>
